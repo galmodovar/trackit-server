@@ -15,6 +15,6 @@ class Application(models.Model):
     notes = models.TextField()
     response = models.BooleanField()
     date_applied = models.DateField()
-    skills = models.ManyToManyField("Type", through="ApplicationType", related_name="skills")
+    skills = models.ManyToManyField("JobType", through="ApplicationType", related_name="skills")
     
     
