@@ -1,0 +1,44 @@
+[
+    {
+        "model": "trackitapi.status",
+        "pk": 1,
+        "fields": {
+            "status": "Researching"
+        }
+    },
+    {
+        "model": "trackitapi.status",
+        "pk": 2,
+        "fields": {
+            "status": "Applied"
+        }
+    },
+    {
+        "model": "trackitapi.status",
+        "pk": 3,
+        "fields": {
+            "status": "Preparing"
+        }
+    },
+    {
+        "model": "trackitapi.status",
+        "pk": 4,
+        "fields": {
+            "status": "Rejected"
+        }
+    },
+    {
+        "model": "trackitapi.status",
+        "pk": 5,
+        "fields": {
+            "status": "Accepted Offer"
+        }
+    },
+    {
+        "model": "trackitapi.status",
+        "pk": 6,
+        "fields": {
+            "status": "No response"
+        }
+    }
+]

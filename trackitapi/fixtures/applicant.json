@@ -1,0 +1,10 @@
+[
+    {
+        "model": "trackitapi.applicant",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "occupation": "Me"
+        }
+    }
+]

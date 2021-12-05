@@ -3,4 +3,4 @@ from django.contrib.auth.models import User
 
 class Applicant(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    profession = models.CharField(max_length=50)
+    occupation = models.CharField(max_length=50)

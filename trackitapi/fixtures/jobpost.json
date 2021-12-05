@@ -1,0 +1,35 @@
+[
+    {
+        "model": "trackitapi.jobpost",
+        "pk": 1,
+        "fields": {
+            "company": "Apple",
+            "company_url": "https://www.apple.com/careers/us/",
+            "role": "Software Developer",
+            "role_url": "https://jobs.apple.com/en-us/details/200287299/software-developer-c-c?team=SFTWR",
+            "industry": "Tech"
+        }
+    },
+    {
+        "model": "trackitapi.jobpost",
+        "pk": 1,
+        "fields": {
+            "company": "Amazon",
+            "company_url": "https://www.amazon.jobs/en/",
+            "role": "Software Engineer",
+            "role_url": "https://www.amazon.jobs/en/jobs/1693369/software-development-engineer",
+            "industry": "Online Retail"
+        }
+    },
+    {
+        "model": "trackitapi.jobpost",
+        "pk": 1,
+        "fields": {
+            "company": "General Motors",
+            "company_url": "https://search-careers.gm.com/",
+            "role": "Software Developer",
+            "role_url": "https://search-careers.gm.com/job/JR-000062875/Software-Developer-Java-Microservices",
+            "industry": "Auto"
+        }
+    }
+]

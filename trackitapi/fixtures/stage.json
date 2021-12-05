@@ -1,0 +1,72 @@
+[
+    {
+        "model": "trackitapi.stage",
+        "pk": 1,
+        "fields": {
+            "stage": "Applied"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 2,
+        "fields": {
+            "stage": "Reviewed"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 3,
+        "fields": {
+            "stage": "Phone Screen"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 4,
+        "fields": {
+            "stage": "1st Interview"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 5,
+        "fields": {
+            "stage": "2nd Interview"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 6,
+        "fields": {
+            "stage": "3rd Interview"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 7,
+        "fields": {
+            "stage": "Technical Interview"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 8,
+        "fields": {
+            "stage": "Offer"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 9,
+        "fields": {
+            "stage": "Hired"
+        }
+    },
+    {
+        "model": "trackitapi.stage",
+        "pk": 10,
+        "fields": {
+            "stage": "Rejected"
+        }
+    }
+]
