@@ -5,5 +5,13 @@
         "--load-plugins=pylint_django",
         "--django-settings-module=trackit.settings",
     ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "trackit",
+            "database": "db.sqlite3"
+        }
+    ],
     
 }
