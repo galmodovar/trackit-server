@@ -3,10 +3,15 @@ from rest_framework import routers
 from django.conf.urls import include
 from django.urls import path
 from trackitapi.views import register_user, login_user
-from trackitapi.views import ApplicationView, Application
+from trackitapi.views import ApplicationView, JobTypeView, StatusView, StageView, JobPostView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'applications', ApplicationView, 'application')
+router.register(r'jobtypes', JobTypeView, 'type')
+router.register(r'status', StatusView, 'status')
+router.register(r'stage', StageView, 'stage')
+router.register(r'jobposts', JobPostView, 'jobpost')
+
 
 
 

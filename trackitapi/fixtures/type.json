@@ -1,69 +1,69 @@
 [
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 1,
         "fields": {
             "job_type": "Frontend"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 2,
         "fields": {
             "job_type": "Backend"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 3,
         "fields": {
             "job_type": "Fullstack"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 4,
         "fields": {
             "job_type": "Javascript"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 5,
         "fields": {
             "job_type": "React"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 6,
         "fields": {
             "job_type": "Python"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 7,
         "fields": {
             "job_type": "Django"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 8,
         "fields": {
             "job_type": "C#"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 9,
         "fields": {
             "job_type": "UI/UX"
         }
     },
     {
-        "model": "trackitapi.type",
+        "model": "trackitapi.jobtype",
         "pk": 10,
         "fields": {
             "job_type": "Java"
