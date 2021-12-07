@@ -128,7 +128,7 @@ class ApplicationView(ViewSet):
             Response -- JSON serialized list of applications
         """
         # Get all game records from the database
-        applications = Application.objects.all()
+        applications = Application.objects.filter(applicant=request.auth.user.id)
 
         # Support filtering games by type
         #    http://localhost:8000/games?type=1
