@@ -9,7 +9,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'applications', ApplicationView, 'application')
 router.register(r'jobtypes', JobTypeView, 'type')
 router.register(r'status', StatusView, 'status')
-router.register(r'stage', StageView, 'stage')
+router.register(r'stages', StageView, 'stage')
 router.register(r'jobposts', JobPostView, 'jobpost')
 
 
