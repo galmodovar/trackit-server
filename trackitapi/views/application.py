@@ -1,5 +1,6 @@
 """View module for handling requests about applications"""
 from django.core.exceptions import ValidationError
+from django.db.models.query_utils import Q
 from rest_framework import status
 from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
@@ -139,6 +140,16 @@ class ApplicationView(ViewSet):
         """
         # Get all game records from the database
         applications = Application.objects.filter(applicant=request.auth.user.id)
+        search = self.request.query_params.get('q', None)
+        if search is not None:
+            applications = Application.objects.filter(
+                # Q(skills__icontains=search) |
+                # Q(company__job_posts__icontains=search),
+                # Q(stage__stage__icontains=search),
+                Q(notes__icontains=search) |
+                Q(status__status__icontains=search)
+            )
+        
 
         # Support filtering games by type
         #    http://localhost:8000/games?type=1
