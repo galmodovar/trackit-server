@@ -139,13 +139,14 @@ class ApplicationView(ViewSet):
             Response -- JSON serialized list of applications
         """
         # Get all game records from the database
-        applications = Application.objects.filter(applicant=request.auth.user.id)
+        applicant = Applicant.objects.get(user=request.auth.user)
+        applications = Application.objects.filter(applicant=applicant)
         search = self.request.query_params.get('q', None)
         if search is not None:
-            applications = Application.objects.filter(
-                # Q(skills__icontains=search) |
-                # Q(company__job_posts__icontains=search),
-                # Q(stage__stage__icontains=search),
+            applications = applications.filter(
+                Q(skills__job_type__icontains=search) |
+                Q(job_post__company__icontains=search) |
+                Q(stage__stage__icontains=search) |
                 Q(notes__icontains=search) |
                 Q(status__status__icontains=search)
             )
