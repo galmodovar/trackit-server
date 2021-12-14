@@ -39,6 +39,6 @@ https://miro.com/app/board/uXjVOeffgwE=/?invite_link_id=244799600905
 
 ## Documentation
 
-Register a new user to get past login screen
-Click Add new application button to get started
+1. Register a new user to get past login screen
+2. Click Add new application button to get started
 
