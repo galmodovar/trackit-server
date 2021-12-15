@@ -10,7 +10,7 @@ The app allows users to create application entries and track their status for jo
 
 To install, follow these steps:
 
-1. Clone this repository and change to the directory in the terminal.
+1. Clone this repository and cd into the directory in the terminal.
 2. Run `pipenv shell`
 3. Run `pipenv install`
 4. Run `makemigrations` and then `migrations`
