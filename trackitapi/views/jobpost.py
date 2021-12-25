@@ -6,7 +6,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from trackitapi.models import JobPost
+from trackitapi.models import JobPost, Applicant, Application
 
 
 class JobPostView(ViewSet):
@@ -79,7 +79,7 @@ class JobPostView(ViewSet):
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
 
         except Exception as ex:
-            return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response({'message': "Application still exists, delete application first."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     def list(self, request):
         """Handle GET requests to job post resource
@@ -89,6 +89,7 @@ class JobPostView(ViewSet):
         """
         # Get all game records from the database
         jobs = JobPost.objects.all()
+
 
 
         serializer = JobPostSerializer(

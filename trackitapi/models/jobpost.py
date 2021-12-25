@@ -8,3 +8,4 @@ class JobPost(models.Model):
     role_url = models.CharField(max_length=100)
     location = models.CharField(max_length=50)
     industry = models.CharField(max_length=50)
+    
