@@ -138,7 +138,7 @@ class ApplicationView(ViewSet):
         Returns:
             Response -- JSON serialized list of applications
         """
-        # Get all game records from the database
+        # Get all apps records from the database
         applicant = Applicant.objects.get(user=request.auth.user)
         applications = Application.objects.filter(applicant=applicant)
         search = self.request.query_params.get('q', None)
@@ -152,8 +152,8 @@ class ApplicationView(ViewSet):
             )
         
 
-        # Support filtering games by type
-        #    http://localhost:8000/games?type=1
+        # Support filtering apps by type
+        #    http://localhost:8000/job?type=1
         #
         # That URL will retrieve all Frontend Jobs
         job_type = self.request.query_params.get('type', None)
