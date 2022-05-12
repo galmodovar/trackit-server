@@ -149,7 +149,7 @@ class ApplicationView(ViewSet):
                 Q(stage__stage__icontains=search) |
                 Q(notes__icontains=search) |
                 Q(status__status__icontains=search)
-            )
+            ).distinct()
         
 
         # Support filtering apps by type
